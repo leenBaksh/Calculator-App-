@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="calculator">
+      <div class="header">
+        <p class="brand">Casio</p>
+        <span>
+          <p class="darkModeTxt">Dark Mode:</p>
+          <input id="darkMode" type="checkbox"
+        /></span>
+      </div>
+      <div class="screen">
+        <p id="screentext"></p>
+      </div>
+
+      <div class="buttons-grid">
+        <button class="operationbtn" onclick="display('+')">+</button>
+        <button class="operationbtn" onclick="display('-')">-</button>
+        <button class="oprationbtn"onclick="display('*')">x</button>
+        <button class="operationbtn"onclick="display('/')">/</button>
+
+        <button class="numberBtn"onclick="display('7')">7</button>
+        <button class="numberBtn"onclick="display('8')">8</button>
+        <button class="numberBtn"onclick="display('9')">9</button>
+
+        <button class="numberBtn"onclick="display('4')">4</button>
+        <button class="numberBtn"onclick="display('5')">5</button>
+        <button class="numberBtn"onclick="display('6')">6</button>
+
+        <button class="numberBtn"onclick="display('1')">1</button>
+        <button class="numberBtn"onclick="display('2')">2</button>
+        <button class="numberBtn"onclick="display('3')">3</button>
+
+          <button class="numberBtn"onclick="display('.')">.</button>
+          <button class="numberBtn"onclick="display('0')">0</button>
+          <button class="numberBtn clearbtn"onclick="display('AC')">AC</button>
+
+          <button id="equal" class="operationbtnequal-sign"onclick="display('=')">=</button>
+
+          <button class="operationbtn prev"onclick="display('<')">Previous</button>
+
+          <button class="operationbtn next"onclick="display('>')">Next</button>
+        </td>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+  </html>
